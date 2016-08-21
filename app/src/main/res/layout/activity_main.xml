@@ -10,8 +10,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="me.sunku.anand.surveyalarm.MainActivity">
 
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmTimePicker"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm On/Off"
+        android:id="@+id/alarmToggle"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/alarmTimePicker"
+        android:onClick="onToggleClicked"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/alarmtText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/alarmToggle"/>
 </RelativeLayout>
